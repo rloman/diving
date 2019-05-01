@@ -14,7 +14,6 @@ public class Application {
 
         foo(animals);
 
-
     }
 
     public static void foo(List<Animal> animals) {
