@@ -2,10 +2,7 @@ package nl.capgemini.diving.streams;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Application {
@@ -15,19 +12,18 @@ public class Application {
 
         List<Integer> numbers = new ArrayList<>();
 
-        numbers.addAll(Arrays.asList(0,1,1,2,3,5,8,13,21,34,55,89,144));
+        numbers.addAll(Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144));
 
         //
-        numbers.stream().filter(n -> n %2 == 0)
+        numbers.stream().filter(n -> n % 2 == 0)
                 .filter(n -> n > 2)
                 .peek(n -> System.out.println("This should not be printed!"))
-                .map(n -> n *n).map(n -> n*n); // non terminals
+                .map(n -> n * n).map(n -> n * n); // non terminals
 
 
-
-        numbers.stream().filter(n -> n %2 == 0)
-                .filter(n -> n > 2).map(n -> n *n)
-                .map(n -> n*n).forEach(n -> { // terminal
+        numbers.stream().filter(n -> n % 2 == 0)
+                .filter(n -> n > 2).map(n -> n * n)
+                .map(n -> n * n).forEach(n -> { // terminal
             System.out.println(n);
         });
 
@@ -35,22 +31,22 @@ public class Application {
 
 
         numbers.stream()
-                .filter(n -> n %2 == 0)
-                .peek(n -> System.out.println("The element is: "+n))
+                .filter(n -> n % 2 == 0)
+                .peek(n -> System.out.println("The element is: " + n))
                 .filter(n -> n > 2)
-                .peek(n -> System.out.println("Now the element is: "+n))
-                .map(n -> n *n)
-                .map(n -> n*n).forEach(n -> { // terminal
+                .peek(n -> System.out.println("Now the element is: " + n))
+                .map(n -> n * n)
+                .map(n -> n * n).forEach(n -> { // terminal
             System.out.println(n);
         });
 
 
         // count the numbers
         long count = numbers.stream()
-                .filter(n -> n %2 == 0)
+                .filter(n -> n % 2 == 0)
                 .count();
 
-        System.out.println("There are "+count+" even numbers");
+        System.out.println("There are " + count + " even numbers");
 
 
         // sum the numbers
@@ -75,5 +71,16 @@ public class Application {
         System.out.println(numbers);
 
 
+        //assignment get min I
+        Optional<Integer> optionalMin = numbers.stream().min(Comparator.comparingInt(n -> n));
+        if (optionalMin.isPresent()) {
+            System.out.println(optionalMin.get());
+        }
+
+        // assignment get max II
+        Optional<Integer> optionalMax = numbers.stream().max(Comparator.comparingInt(n -> n));
+        if (optionalMax.isPresent()) {
+            System.out.println(optionalMax.get());
+        }
     }
 }
