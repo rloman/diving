@@ -1,4 +1,4 @@
-package nl.capgemini.diving.equalstrainer;
+package nl.capgemini.diving.hashCodeEquals.equalstrainer;
 
 import nl.capgemini.diving.model.Suit;
 

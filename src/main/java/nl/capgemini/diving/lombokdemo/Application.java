@@ -1,4 +1,4 @@
-package nl.capgemini.diving.model.lombok;
+package nl.capgemini.diving.lombokdemo;
 
 public class Application {
 

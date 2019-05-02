@@ -1,6 +1,5 @@
-package nl.capgemini.diving.hashCodeGarderobe;
+package nl.capgemini.diving.hashCodeEquals.hashCodeGarderobe;
 
-import nl.capgemini.diving.innerclass.Car;
 import nl.capgemini.diving.model.Diver;
 import nl.capgemini.diving.model.Suit;
 

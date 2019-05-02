@@ -1,4 +1,4 @@
-package nl.capgemini.diving.innerclass;
+package nl.capgemini.diving.innerclasses.innerclass;
 
 public class Car {
 

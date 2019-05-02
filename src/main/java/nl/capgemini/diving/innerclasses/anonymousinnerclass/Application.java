@@ -1,7 +1,4 @@
-package nl.capgemini.diving.anonymousinnerclass;
-
-import java.awt.event.MouseListener;
-import java.util.*;
+package nl.capgemini.diving.innerclasses.anonymousinnerclass;
 
 public class Application {
 
