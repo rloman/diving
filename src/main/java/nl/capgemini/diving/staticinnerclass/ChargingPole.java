@@ -13,6 +13,7 @@ public class ChargingPole {
     private ChargingPole(ChargingPoleBuilder builder) {
         this.type = builder.type;
         this.numberOfChargers = builder.numberOfChargers;
+        this.owner = builder.owner;
     }
 
     public String getType() {
@@ -57,6 +58,12 @@ public class ChargingPole {
 
         public ChargingPoleBuilder location(String location) {
             this.location = location;
+
+            return this;
+        }
+
+        public ChargingPoleBuilder owner(String owner) {
+            this.owner = owner;
 
             return this;
         }
