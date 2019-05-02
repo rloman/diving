@@ -1,4 +1,4 @@
-package nl.capgemini.diving.staticinnerclass;
+package nl.capgemini.diving.innerclasses.staticinnerclass;
 
 public class ChargingPole {
 

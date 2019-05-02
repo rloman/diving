@@ -1,8 +1,11 @@
-package nl.capgemini.diving.equalstrainer;
+package nl.capgemini.diving.hashCodeEquals.equalstrainer;
 
 import nl.capgemini.diving.model.Suit;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class Application {
 
