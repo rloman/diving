@@ -2,8 +2,7 @@ package nl.capgemini.diving.staticinnerclass;
 
 public class ChargingPole {
 
-    // 20 properties,modelling 3 here for demo purposes
-
+    // 20 properties,modelling 5 here for demo purposes
     private String type;
     private int numberOfChargers;
     private String location;
