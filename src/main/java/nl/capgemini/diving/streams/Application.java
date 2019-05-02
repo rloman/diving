@@ -1,7 +1,5 @@
 package nl.capgemini.diving.streams;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
