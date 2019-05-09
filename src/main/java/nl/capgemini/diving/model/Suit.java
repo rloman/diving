@@ -1,6 +1,6 @@
 package nl.capgemini.diving.model;
 
-public class Suit {
+public class Suit implements Comparable <Suit> {
 
     private Size size;
     private Color color;
@@ -54,5 +54,21 @@ public class Suit {
                 "size='" + size + '\'' +
                 ", color='" + color + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Suit other) {
+
+        // first compare them on the size
+        int compareOnSize = this.size.compareTo(other.size);
+
+        // if they are not the same, I am done ...
+        if(compareOnSize != 0) {
+            return compareOnSize;
+        }
+        else {
+            // if they are the same, compare them on color
+            return this.color.compareTo(other.color);
+        }
     }
 }
