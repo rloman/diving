@@ -1,4 +1,4 @@
-package nl.capgemini.diving.comparing;
+package nl.capgemini.diving.comparing.comparable;
 
 import nl.capgemini.diving.model.Color;
 import nl.capgemini.diving.model.Size;

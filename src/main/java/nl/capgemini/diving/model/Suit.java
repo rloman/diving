@@ -1,6 +1,6 @@
 package nl.capgemini.diving.model;
 
-public class Suit implements Comparable <Suit> {
+public class Suit implements Comparable <Suit>  {
 
     private Size size;
     private Color color;
