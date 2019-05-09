@@ -1,5 +1,7 @@
 package nl.capgemini.diving.hashCodeEquals.equalstrainer;
 
+import nl.capgemini.diving.model.Color;
+import nl.capgemini.diving.model.Size;
 import nl.capgemini.diving.model.Suit;
 
 import java.util.ArrayList;
@@ -14,8 +16,8 @@ public class Application {
 
 
         Suit first = new Suit();
-        first.setColor("Black");
-        first.setSize("XL");
+        first.setColor(Color.BLACK);
+        first.setSize(Size.XLARGE);
 
         suits.add(first);
 
@@ -26,8 +28,8 @@ public class Application {
         }
 
         Suit second = new Suit();
-        second.setSize("XL");
-        second.setColor("Black");
+        second.setSize(Size.XLARGE);
+        second.setColor(Color.BLACK);
 
 
         if(!suits.contains(second)) {

@@ -2,22 +2,31 @@ package nl.capgemini.diving.model;
 
 public class Suit {
 
-    private String size;
-    private String color;
+    private Size size;
+    private Color color;
 
-    public String getSize() {
+    public Size getSize() {
         return size;
     }
 
-    public void setSize(String size) {
+    public Suit(Size size, Color color) {
+        this.size = size;
+        this.color = color;
+    }
+
+    public Suit() {
+
+    }
+
+    public void setSize(Size size) {
         this.size = size;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

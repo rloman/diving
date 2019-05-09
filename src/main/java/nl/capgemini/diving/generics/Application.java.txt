@@ -1,6 +1,6 @@
-package nl.capgemini.divingweb.generics;
+package nl.capgemini.diving.generics;
 
-import nl.capgemini.divingweb.model.Suit;
+import nl.capgemini.diving.model.Suit;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,12 +20,12 @@ public class Application {
 
         numbers.addAll(Arrays.asList(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233));
 
-        Box<String> stringBox = new Box<>();
+        nl.capgemini.diving.generics.Box<String> stringBox = new nl.capgemini.divingweb.generics.Box<>();
         stringBox.add("A");
 
         System.out.println(stringBox.get());
 
-        Box<Suit> suitBox = new Box<>();
+        nl.capgemini.diving.generics.Box<Suit> suitBox = new nl.capgemini.divingweb.generics.Box<>();
         suitBox.add(new Suit());
 
         System.out.println(suitBox.get());
@@ -34,9 +34,9 @@ public class Application {
     }
 
     public static void demoIterable() {
-        NumberBox<Long> numberBox = new NumberBox<>();
+        nl.capgemini.divingweb.generics.NumberBox<Long> numberBox = new nl.capgemini.divingweb.generics.NumberBox<>();
 
-        Box<String> names = new Box<>();
+        nl.capgemini.divingweb.generics.Box<String> names = new nl.capgemini.divingweb.generics.Box<>();
 
         names.add("A");
         names.add("B");

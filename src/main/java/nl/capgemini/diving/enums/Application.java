@@ -2,6 +2,7 @@ package nl.capgemini.diving.enums;
 
 import nl.capgemini.diving.model.Color;
 import nl.capgemini.diving.model.Size;
+import nl.capgemini.diving.model.Suit;
 
 public class Application {
 

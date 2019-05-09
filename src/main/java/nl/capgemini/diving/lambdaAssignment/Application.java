@@ -1,8 +1,8 @@
 package nl.capgemini.diving.lambdaAssignment;
 
-import nl.capgemini.diving.enums.Suit;
 import nl.capgemini.diving.model.Color;
 import nl.capgemini.diving.model.Size;
+import nl.capgemini.diving.model.Suit;
 
 import java.util.ArrayList;
 import java.util.Arrays;
