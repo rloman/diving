@@ -45,9 +45,9 @@ public class Application {
     }
 
 
-    public static void print(Supplier<Color> getter) {
+    public static void print(Supplier<Color> colorSupplier) {
 
-        System.out.println(getter.get());
+        System.out.println(colorSupplier.get());
 
     }
 }
