@@ -37,8 +37,33 @@ public class Calculations {
     }
 
     //
-	// ggd
+    // gcd
+    public static int gcd(int n, int m) {
+        // simplest version
+        if (n % m == 0) {
+            return m;
+        } else {
+            return gcd(m, n % m);
+        }
+    }
 
-	// fibonacci
+    // kgv (Dutch), Englist least common multiple
+    public static int lcm(int n, int m) {
+        return (n * m) / gcd(n, m);
+    }
 
+
+    // fibonacci
+    public static int fibon(int n) {
+
+        if (n == 0) {
+            return 0;
+        } else {
+            if (n == 1) {
+                return 1;
+            } else {
+                return fibon(n - 1) + fibon(n - 2);
+            }
+        }
+    }
 }
