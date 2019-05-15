@@ -8,7 +8,7 @@ public class Application {
             incThread.start();
         }
 
-        Thread.sleep(15000);
+        Thread.sleep(1000);
         System.out.println(Counter.getNumber());
     }
 }
