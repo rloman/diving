@@ -3,3 +3,6 @@
 *.jar
 .idea
 target
+input.people
+*.log
+*.txt
