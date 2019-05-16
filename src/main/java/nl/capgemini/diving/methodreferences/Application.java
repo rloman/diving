@@ -1,6 +1,7 @@
 package nl.capgemini.diving.methodreferences;
 
 import nl.capgemini.diving.model.Color;
+import nl.capgemini.diving.model.Mask;
 
 import java.util.ArrayList;
 import java.util.Arrays;

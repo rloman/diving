@@ -1,4 +1,4 @@
-package nl.capgemini.diving.methodreferences;
+package nl.capgemini.diving.model;
 
 import nl.capgemini.diving.model.Color;
 
