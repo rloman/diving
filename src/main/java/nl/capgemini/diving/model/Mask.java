@@ -4,6 +4,8 @@ import nl.capgemini.diving.model.Color;
 
 public class Mask {
 
+    private double price;
+
     private Color color;
 
     public Color getColor() {
@@ -12,5 +14,13 @@ public class Mask {
 
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
