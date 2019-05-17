@@ -25,7 +25,5 @@ public class Application {
 
 
         Assertion.ensure(maskAdder.apply(m1,m2).getPrice() == 7);
-
-
     }
 }
