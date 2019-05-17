@@ -1,5 +1,7 @@
 package nl.capgemini.diving.algorithms;
 
+import nl.capgemini.diving.assertions.Assertion;
+
 public class Calculations {
 
 
@@ -23,17 +25,28 @@ public class Calculations {
     }
 
     public static int sumFromOneToSmart(int n) {
+
+        Assertion.require(n > 0);
+
         int result = (n * (n + 1)) / 2;
+
+        Assertion.ensure(result >= n);
+
+        assert (result >= n);
 
         return result;
     }
 
     public static int fac(int n) {
+        Assertion.require(n > -1);
         if (n == 0) {
+            Assertion.ensure(n == 0);
             return 1;
         } else {
+            Assertion.ensure(n > n -1);
             return n * fac(n - 1);
         }
+
     }
 
     //
