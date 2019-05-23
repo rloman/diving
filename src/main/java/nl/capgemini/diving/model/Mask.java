@@ -1,7 +1,5 @@
 package nl.capgemini.diving.model;
 
-import nl.capgemini.diving.model.Color;
-
 public class Mask {
 
     private double price;

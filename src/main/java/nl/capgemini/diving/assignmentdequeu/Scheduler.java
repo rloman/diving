@@ -2,7 +2,6 @@ package nl.capgemini.diving.assignmentdequeu;
 
 import java.util.ArrayDeque;
 import java.util.Collection;
-import java.util.List;
 
 public class Scheduler {
 
